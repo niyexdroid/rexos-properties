@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import { getAllProperties, getPropertyBySlug } from "@/data/properties";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PropertyGallery from "@/components/PropertyGallery";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: { slug: string };
@@ -14,24 +16,28 @@ export function generateStaticParams() {
   return getAllProperties().map((p) => ({ slug: p.slug }));
 }
 
+export function generateMetadata({ params }: Props): Metadata {
+  const property = getPropertyBySlug(params.slug);
+
+  if (!property) {
+    return {
+      title: "Property Not Found",
+    };
+  }
+
+  return {
+    title: property.name,
+    description: `Discover ${property.name} in ${
+      property.location
+    }. ${property.description.substring(0, 150)}...`,
+  };
+}
+
 export default function PropertyDetailPage({ params }: Props) {
   const property = getPropertyBySlug(params.slug);
+
   if (!property) {
-    return (
-      <div className="min-h-screen bg-white text-primary">
-        <Header />
-        <main className="container mx-auto px-4 pt-28 pb-16">
-          <h1 className="text-2xl font-bold">Property not found</h1>
-          <p className="mt-2">
-            The property you are looking for does not exist.
-          </p>
-          <Link className="underline mt-4 inline-block" href="/properties">
-            Back to properties
-          </Link>
-        </main>
-        <Footer />
-      </div>
-    );
+    notFound();
   }
 
   return (

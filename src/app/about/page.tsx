@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ImpactSection from "@/components/ImpactSection";
 import ComfortPriority from "@/components/ComfortPriority";
 import Testimonials from "@/components/Testimonials";
 import Breadcrumbs from "@/components/Breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Founded in 2019 by industry veterans, Rexos Properties has established itself as a premier real estate development company in Lagos.",
+};
 
 const AboutPage = () => {
   return (

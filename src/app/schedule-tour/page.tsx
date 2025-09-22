@@ -1,3 +1,5 @@
+// Add metadata via a colocated layout instead of client page. Create layout file separately.
+
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
 import { getAllProperties } from "@/data/properties";
 import Breadcrumbs from "@/components/Breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "Our Properties",
+  description:
+    "Explore our premium collection of luxury properties in Lagos. Discover your dream home from our carefully curated selection.",
+};
 
 const PropertiesPage = () => {
   return (
