@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* Font Face Declarations */
+@font-face {
+  font-family: "Bomstad Display";
+  src: url("/assets/fonts/BomstadDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bomstad Display";
+  src: url("/assets/fonts/BomstadDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bomstad Display";
+  src: url("/assets/fonts/BomstadDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bomstad Display";
+  src: url("/assets/fonts/BomstadDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bomstad Display";
+  src: url("/assets/fonts/BomstadDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Bomstad Display", sans-serif;
+  background-color: #ffffff;
+  color: #011b3b;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.hero-background {
+  background-image: url("/assets/bp-bg-img-1.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-background {
+  background-image: url("/assets/bp-bg-img-2.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.tour-image-container {
+  width: 604px;
+  height: 850px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .tour-image-container {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.navbar-bg {
+  background-color: #606161;
+}
+
+.hero-overlay {
+  background-color: #606161;
+}
+
+.testimonial-bg {
+  background-color: #606161;
+}
+
+.text-primary {
+  color: #011b3b;
+}
+
+.border-primary {
+  border-color: #011b3b;
+}
+
+.bg-primary {
+  background-color: #011b3b;
+}

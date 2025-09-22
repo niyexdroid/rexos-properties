@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "oral-estate",
+    "name": "Oral Estate",
+    "location": "Lekki, Lagos",
+    "heroImage": "/assets/houseimg-1.jpg",
+    "images": [
+      "/assets/houseimg-6.jpg",
+      "/assets/houseimg-7.jpg",
+      "/assets/houseimg-8.jpg"
+    ],
+    "description": "Discover refined living in Oral Estate, located in the heart of Lekki. This contemporary property blends comfort with modern design, featuring bright interiors, secure access, and proximity to essential amenities.",
+    "amenities": [
+      "Recreation Area",
+      "CCTV Coverage",
+      "Dedicated Play Area",
+      "Fast Internet Ready",
+      "Street Lighting",
+      "Good Road Network",
+      "Electricity/ Street Lighting",
+      "Advance Waste Management System"
+    ],
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "areaSqft": 1850,
+    "propertyType": "Duplex",
+    "status": "For Rent",
+    "mapQuery": "Oral Estate, Lekki, Lagos"
+  },
+  {
+    "slug": "white-beach",
+    "name": "White Beach Estate",
+    "location": "Lekki, Lagos",
+    "heroImage": "/assets/houseimg-3.jpg",
+    "images": [
+      "/assets/houseimg-4.jpg",
+      "/assets/houseimg-3.jpg",
+      "/assets/houseimg-5.jpg"
+    ],
+    "description": "White Beach Estate offers a serene lifestyle with airy spaces and a coastal-inspired aesthetic. Enjoy easy access to leisure spots and a community designed for relaxation and productivity.",
+    "amenities": [
+      "Recreation Area",
+      "CCTV Coverage",
+      "Dedicated Play Area",
+      "Fast Internet Ready",
+      "Street Lighting",
+      "Good Road Network",
+      "Electricity/ Street Lighting",
+      "Advance Waste Management System"
+    ],
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "areaSqft": 2200,
+    "propertyType": "Terrace",
+    "status": "For Sale",
+    "mapQuery": "White Beach Estate, Lekki, Lagos"
+  },
+  {
+    "slug": "royal-pine-estate",
+    "name": "Royal Pine Estate",
+    "location": "Lekki, Lagos",
+    "heroImage": "/assets/houseimg-9.jpg",
+    "images": [
+      "/assets/houseimg-9.jpg",
+      "/assets/houseimg-10.jpg",
+      "/assets/houseimg-12.jpg"
+    ],
+    "description": "Experience premium comfort at Royal Pine Estate. Thoughtful architecture, lush surroundings, and top-tier infrastructure make this an excellent choice for families and professionals.",
+    "amenities": [
+      "Perimeter Fencing",
+      "Clean Drainage",
+      "Green Landscaping",
+      "Proximity to Malls",
+      "Reliable Power",
+      "Estate Management"
+    ],
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "areaSqft": 2600,
+    "propertyType": "Detached Duplex",
+    "status": "New",
+    "mapQuery": "Royal Pine Estate, Lekki, Lagos"
+  }
+]
