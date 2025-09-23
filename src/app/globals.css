@@ -62,7 +62,7 @@
 body {
   font-family: "Bomstad Display", sans-serif;
   background-color: #ffffff;
-  color: #011b3b;
+  color: #1a3763; /* updated brand text color */
 }
 
 .font-extra-bold {
@@ -70,9 +70,8 @@ body {
 }
 
 .hero-background {
-  background-image: url("/assets/bp-bg-img-1.svg");
-  background-size: cover;
-  background-position: center;
+  /* Removed background image per rebrand; using solid brand color */
+  background: #1a3763;
 }
 
 .about-background {
@@ -96,25 +95,27 @@ body {
 }
 
 .navbar-bg {
-  background-color: #606161;
+  background-color: #1a3763;
 }
-
 .hero-overlay {
-  background-color: #606161;
+  background-color: #1a3763;
 }
-
 .testimonial-bg {
-  background-color: #606161;
+  background-color: #1a3763;
 }
 
 .text-primary {
-  color: #011b3b;
+  color: #1a3763;
 }
-
 .border-primary {
-  border-color: #011b3b;
+  border-color: #1a3763;
+}
+.bg-primary {
+  background-color: #1a3763;
 }
 
-.bg-primary {
-  background-color: #011b3b;
+/* Placeholder color aligned with brand */
+::placeholder {
+  color: #1a3763;
+  opacity: 0.6;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const TourSection = () => {
   return (
@@ -50,9 +51,12 @@ const TourSection = () => {
           </div>
         </div>
         <div className="text-center mt-12">
-          <button className="bg-transparent border border-primary text-primary py-2 px-6 rounded-md hover:bg-primary hover:text-white transition">
+          <Link
+            href="/contact"
+            className="inline-block bg-transparent border border-primary text-primary py-2 px-6 rounded-md hover:bg-primary hover:text-white transition"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </div>

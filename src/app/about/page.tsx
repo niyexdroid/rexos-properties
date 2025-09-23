@@ -16,8 +16,8 @@ const AboutPage = () => {
   return (
     <div className="bg-gray-100 text-gray-800">
       <Header />
-      <main className="pt-24 pb-16 about-background text-white">
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+      <main className="pt-24 pb-16 about-background text-white relative">
+        <div className="absolute inset-0 bg-[#1A3763] opacity-70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <Breadcrumbs className="mb-4" />
           <div className="max-w-4xl mx-auto">
@@ -54,39 +54,6 @@ const AboutPage = () => {
           </div>
         </div>
       </main>
-      {/* Oral Estate About Section */}
-      <section className="bg-white text-primary py-12">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl font-bold mb-4">About Oral Estate</h2>
-          <div className="space-y-5 leading-7">
-            <p>
-              Step into modern luxury with this stunning 2-bedroom flat where
-              every detail has been crafted for your ultimate comfort. Both
-              spacious bedrooms are thoughtfully designed with contemporary
-              finishes and excellent ventilation, creating the perfect retreat
-              for rest and relaxation.
-            </p>
-            <p>
-              Expertly designed with open-plan living areas, this home maximizes
-              space and functionality, offering you the ideal setting to
-              entertain guests or simply unwind after a busy day. Picture
-              yourself enjoying peaceful evenings in your beautifully appointed
-              living space or hosting intimate gatherings with friends and
-              family.
-            </p>
-            <p>
-              Strategically positioned at the prestigious Chevron Toll-Gate area
-              of Lekki, you&apos;re at the gateway to Lagos&apos; most coveted
-              residential corridor. Enjoy unparalleled connectivity with direct
-              access to major expressways, proximity to multinational corporate
-              offices, world-class shopping destinations, premium healthcare
-              facilities, and top-tier educational institutions. Your daily
-              commute becomes effortless whether you&apos;re heading to Victoria
-              Island, Ikoyi, or the Lagos mainland.
-            </p>
-          </div>
-        </div>
-      </section>
       <ImpactSection />
       <ComfortPriority />
       <Testimonials />

@@ -8,7 +8,7 @@
       @media (prefers-color-scheme: light){ .fg{fill:#0f172a;} }
     </style>
   </defs>
-  <rect width="256" height="256" rx="48" ry="48" fill="none" />
+  <rect width="256" height="256" rx="48" ry="48" fill="#1A3763" />
   <!-- Monogram R constructed for visual weight in small sizes -->
   <path class="fg" d="M78 208V48h66c38 0 62 21.5 62 53.9 0 24.7-14.2 43.9-37.4 50.9L206 208h-42.8l-32.6-52H118v52H78Zm40-88h22.8c16.3 0 25.9-8.2 25.9-21.7 0-13.2-9.6-21.3-25.9-21.3H118V120Z"/>
 </svg>
